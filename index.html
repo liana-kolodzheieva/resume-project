@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Wapper -->
-    <div class="wapper">
+    <div class="wrapper">
         <!-- Main conter -->
 
-        <div class="main content ">
+        <div class="main-content">
             <!-- My info -->
 
-            <div>
-                <h2>Full Stack Developer</h2>
-                <h1>Liana Kolodgeeva</h1>
-                <p>I have been studying programming for 3 years, I started with Backend development and continued with
+            <div class="my-info">
+                <h2 class="my-profession">Full Stack Developer</h2>
+                <h1 class="my-name">Liana Kolodgeeva</h1>
+                <p class="my-descr">I have been studying programming for 3 years, I started with Backend development and
+                    continued with
                     Frontend development.</p>
 
             </div>
             <!-- My progects -->
-            <div>
-                <h3>Projects</h3>
-                <ol>
+            <div class="projects-contener">
+                <h3 class="projects-title">Projects</h3>
+                <ol class="projects-list">
                     <li class="prject-item">
-                        <a href="https://github.com/liana-kolodzheieva/user"
+                        <a class="projects-item-link" href="https://github.com/liana-kolodzheieva/user"
                             target="_blank">https://github.com/liana-kolodzheieva/user</a>
-                        --------------------------
-                        [Java]
-                    </li>
-                    <li>
-                        <a href="https://github.com/liana-kolodzheieva/python-optima"
-                            target="_blank">https://github.com/liana-kolodzheieva/python-optima</a>
-                        -------------
-                        [python]
+                        <span class="projects-item-tech">---------------------------
+                            [Java]</span>
                     </li>
                     <li class="prject-item">
-                        <a href="https://github.com/liana-kolodzheieva/resume-project"
+                        <a class="projects-item-link" href="https://github.com/liana-kolodzheieva/python-optima"
+                            target="_blank">https://github.com/liana-kolodzheieva/python-optima</a>
+                        <span class="projects-item-tech"> -------------
+                            [python]</span>
+                    </li>
+                    <li class="prject-item">
+                        <a class="projects-item-link" href="https://github.com/liana-kolodzheieva/resume-project"
                             target="_blank">https://github.com/liana-kolodzheieva/resume-project</a>
-                        -------------
-                        [HTML]
+                        <span class="projects-item-tech">-------------
+                            [HTML]</span>
 
                     </li>
                 </ol>
@@ -51,37 +55,51 @@
             </div>
             <!-- Work experince -->
             <div>
-                <h3>Work Experince</h3>
+                <h3 class="work-experince-title">Work Experince</h3>
                 <!-- Company 1 -->
                 <div>
-                    <h4>Full Stack Developer</h4>
-                    <p>15.11.2023 - up to now</p>
-                    <ul>
-                        <li>Participate in the creation of the AutoPartner application</li>
+                    <h4 class="work-experince-company">Full Stack Developer <samp class="company">AUTO-PARTNER</samp>
+                    </h4>
+                    <p class="data">15.11.2023 - up to now <samp class="country">|</samp>
+                        <samp class="data"> Ukrain</samp>
+                    </p>
+                    <ul class="description">
+                        <li class="job-description">Mathematical calculations for the cost of work</li>
+                        <li class="job-description">General view of the application</li>
+                        <li class="job-description">backend code</li>
                     </ul>
                 </div>
                 <!-- Company 2 -->
                 <div>
-                    <h4>Back-End Developer</h4>
-                    <p>05.04.2023 - 06.04.23</p>
-                    <ul>
-                        <li>School project</li>
+                    <h4 class="work-experince-company">Back-End Developer <span class="company">Optima</span> </h4>
+                    <p class="data">05.04.2023 - 06.04.23 <span class="country">|</span>
+                        <span class="data"> Ukrain</span>
+                    </p>
+                    <ul class="description">
+                        <li class="job-description">mathematical calculations</li>
+                        <li class="job-description">backend text</li>
                     </ul>
                 </div>
 
                 <!-- Company 3 -->
                 <div>
-                    <h4>Back-End Developer</h4>
-                    <p>10.06.2022 - 01.07.22</p>
-                    <ul>
-                        <li>Created Java service for the user management</li>
+                    <h4 class="work-experince-company">Full Stack Developer <samp class="company">Hillel</samp></h4>
+                    <p class="data">10.06.2022 - 01.07.22 <samp class="country">|</samp>
+                        <spam class="data"> Ukrain</spam>
+                    </p>
+                    <ul class="description">
+                        <li class="job-description">user creation baset</li>
+                        <li class="job-description">backend code</li>
                     </ul>
                 </div>
                 <!-- Education -->
                 <div>
-                    <h3>Education</h3>
-                    <h4>Hillel - IT school</h4>
-                    <p>Back-End</p>
+                    <h3 class="education-title">Education</h3>
+                    <h4 class="education-school">Hillel - IT school</h4>
+                    <p class="education">Back-End</p>
+                    <p class="education-data">2019-2020 <span class="country">|</span> <Span
+                            class="education-data">Ukrain</Span>
+                    </p>
                 </div>
 
 
@@ -90,37 +108,47 @@
         </div>
 
         <!-- Sidebar -->
-        <aside>
-            <img src="img/resume.jpg" alt="My photo" width="200">
-        </aside>
-        <!-- Contacts -->
-        <div>
-            <h3>Contacts</h3>
-            <p>Tel(PL): <a href="tel:+48790289421" target="_blank">+48 790 289 421</a></p>
-            <p>Tel(UA): <a href="tel:+380661190957" target="_blank">+380 661 190 957</a></p>
-            <p>Email: <a href="mailto:liana.kolodgeeva@gmail.com" target="_blank">liana.kolodgeeva@gmail.com</a></p>
-        </div>
-        <!-- Tech skills -->
-        <div>
-            <h3>Tech skills</h3>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>Github</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-        <!-- Soft skills -->
-        <div>
-            <h3>Soft skills</h3>
-            <ul>
-                <li>Teamwork</li>
-                <li>Communication</li>
-                <li>Adaptability</li>
-                <li>Curiosity</li>
-            </ul>
-        </div>
+        <aside class="sidebar">
+            <img src="img/resume.jpg" alt="My photo" width="370">
+            <div class="sidebar-content">
+                <div class="contavts-contener">
+                    <h3 class="contakcts-title">Contacts</h3>
+                    <p class="contakcts-element"><span class="contects-type">Tel(PL):</span><a class="contakcts-link"
+                            href="tel:+48790289421" target="_blank">+48 790 289
+                            421</a></p>
+                    <p class="contakcts-element"><span class="contects-type">Tel(UA):</span> <a class="contakcts-link"
+                            href="tel:+380661190957" target="_blank">+380 661 190
+                            957</a></p>
+                    <p class="contakcts-element"><span class="contects-type">Emeil:</span><a class="contakcts-link"
+                            href="mailto:liana.kolodgeeva@gmail.com" target="_blank">liana.kolodgeeva@gmail.com</a></p>
+                </div>
+                <!-- Tech skills -->
+
+            </div>
+            <div class="skills-conteintr">
+                <h3 class="skills-title">Tech skills</h3>
+                <ul class="skalls-list">
+                    <li class="skall-list-item">Java</li>
+                    <li class="skall-list-item">Python</li>
+                    <li class="skall-list-item">HTML</li>
+                    <li class="skall-list-item">Github</li>
+                    <li class="skall-list-item">CSS</li>
+                </ul>
+            </div>
+            <!-- Soft skills -->
+            <div class="skills-conteintr-1">
+                <h3 class="skills-title-1">Soft skills</h3>
+                <ul class="skills-list-1">
+                    <li class="skall-list-item-1">Teamwork</li>
+                    <li class="skall-list-item-1">Communication</li>
+                    <li class="skall-list-item-1">Adaptability</li>
+                    <li class="skall-list-item-1">Curiosity</li>
+                </ul>
+            </div>
+    </div>
+
+    </aside>
+
     </div>
 
 </body>
