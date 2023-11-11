@@ -1,0 +1,17 @@
+body {
+    background: rgb(255, 255, 255);
+    padding: 40px 40px 40px 40px;
+
+}
+
+.wapper {
+    background-color: rgb(246, 246, 250);
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+.main-content {
+    padding: 88px 80px 40px 80px;
+    box-sizing: border-box;
+}
